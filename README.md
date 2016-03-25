@@ -22,7 +22,7 @@ ShaneKing, More to see [shaneking.org][].
 ShaneKing is released under [MIT][].
 
 
-
+[ShaneKing]: shaneking.org
 [shaneking.org]: http://shaneking.org/
 
 
