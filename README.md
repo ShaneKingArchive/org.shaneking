@@ -1,4 +1,4 @@
-## [ShaneKing][]
+# [ShaneKing][]
 ShaneKing, More to see [shaneking.org][].
 
 ## Dependencies
@@ -22,8 +22,8 @@ ShaneKing, More to see [shaneking.org][].
 ShaneKing is released under [MIT][].
 
 
-[ShaneKing]: shaneking.org
-[shaneking.org]: http://shaneking.org/
+[ShaneKing]: https://shaneking.org/
+[shaneking.org]: https://shaneking.org/
 
 
 [versioneye]:https://www.versioneye.com/user/projects/56f501b235630e0034fda335
