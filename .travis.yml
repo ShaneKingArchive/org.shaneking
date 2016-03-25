@@ -1,5 +1,5 @@
 language: java
-sudo: false # faster builds
+#sudo: false # faster builds
 
 jdk:
   - oraclejdk8
@@ -8,4 +8,4 @@ before_install:
   - pip install codecov
 
 after_success:
-  - bash <(curl -s https://codecov.io/bash)
+  - codecov
