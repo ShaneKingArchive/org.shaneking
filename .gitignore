@@ -1,4 +1,29 @@
+# system
+.DS_Store
+
+# ide eclipse
+.settings
+.project
+.classpath
+*_mvn_deploy.launch
+
+# ide idea
+.idea
+*.iml
+
+# mvn
+target
+
+# java
 *.class
+
+# cfg
+*.Cfg.SK.properties
+*.Cfg.SK.xml
+
+# model
+*.mwb
+*.mwb.bak
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
