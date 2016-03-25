@@ -1,5 +1,5 @@
 # [ShaneKing][]
-ShaneKing, More to see [shaneking.org][].
+More to see [shaneking.org][].
 
 ## Dependencies
 [![][versioneye img]][versioneye]
