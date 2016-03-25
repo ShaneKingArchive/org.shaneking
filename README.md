@@ -22,8 +22,8 @@ ShaneKing, More to see [shaneking.org][].
 ShaneKing is released under [MIT][].
 
 
-[ShaneKing]: https://shaneking.org/
-[shaneking.org]: https://shaneking.org/
+[ShaneKing]: http://shaneking.org/
+[shaneking.org]: http://shaneking.org/
 
 
 [versioneye]:https://www.versioneye.com/user/projects/56f501b235630e0034fda335
