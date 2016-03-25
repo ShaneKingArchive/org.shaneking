@@ -18,8 +18,8 @@ target
 *.class
 
 # cfg
-*.Cfg.SK.properties
-*.Cfg.SK.xml
+*.cfg.sk.properties
+*.cfg.sk.xml
 
 # model
 *.mwb
