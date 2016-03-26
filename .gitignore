@@ -17,6 +17,12 @@ target
 # java
 *.class
 
+# sass
+.sass-cache
+
+# nodejs
+node_modules
+
 # cfg
 *.cfg.sk.properties
 *.cfg.sk.xml
