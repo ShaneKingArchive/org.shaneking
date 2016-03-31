@@ -8,7 +8,8 @@ More to see [shaneking.org][].
 [![][travis img]][travis]
 
 ## Test
-[![][coverage img]][coverage]
+[![][codecov img]][codecov]
+[![][codacy img]][codacy]
 
 ## Release
 [![][mavenbadge img]][mavenbadge]
@@ -34,8 +35,10 @@ ShaneKing is released under [MIT][].
 [travis img]:https://secure.travis-ci.org/ShaneKing/org.shaneking.png
 
 
-[coverage]:https://codecov.io/github/ShaneKing/org.shaneking?branch=mirror
-[coverage img]:https://codecov.io/github/ShaneKing/org.shaneking/coverage.svg?branch=mirror
+[codecov]:https://codecov.io/github/ShaneKing/org.shaneking?branch=mirror
+[codecov img]:https://codecov.io/github/ShaneKing/org.shaneking/coverage.svg?branch=mirror
+[codacy]:https://www.codacy.com/app/ShaneKing/org-shaneking
+[codacy img]:https://api.codacy.com/project/badge/grade/e4f1c3dc762f476d8dc6643755d168dc
 [saucelabs]:https://saucelabs.com/u/ShaneKing
 [saucelabs img]:https://saucelabs.com/browser-matrix/ShaneKing.svg
 
