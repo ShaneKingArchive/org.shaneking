@@ -87,6 +87,7 @@
     <com.google.code.gson_gson_version>2.4</com.google.code.gson_gson_version>
     <com.google.guava_guava_version>18.0</com.google.guava_guava_version>
     <com.google.zxing_version>3.2.0</com.google.zxing_version>
+    <commons-codec_commons-codec_version>1.10</commons-codec_commons-codec_version>
     <commons-io_commons-io_version>2.4</commons-io_commons-io_version>
     <commons-net_commons-net_version>3.3</commons-net_commons-net_version>
     <javax.servlet_javax.servlet-api_version>3.1.0</javax.servlet_javax.servlet-api_version>
@@ -145,6 +146,11 @@
         <groupId>com.google.zxing</groupId>
         <artifactId>javase</artifactId>
         <version>${com.google.zxing_version}</version>
+      </dependency>
+      <dependency>
+        <groupId>commons-codec</groupId>
+        <artifactId>commons-codec</artifactId>
+        <version>${commons-codec_commons-codec_version}</version>
       </dependency>
       <dependency>
         <groupId>commons-net</groupId>
