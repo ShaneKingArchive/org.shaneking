@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.shaneking</groupId>
   <artifactId>org.shaneking</artifactId>
-  <version>0.0.3</version>
+  <version>0.0.4</version>
   <packaging>pom</packaging>
   <name>ShaneKing</name>
   <description>ShaneKing</description>
@@ -83,7 +83,8 @@
     <!-- dependencies -->
     <com.belerweb_pinyin4j_version>2.5.1</com.belerweb_pinyin4j_version>
     <com.fasterxml.jackson.core_version>2.8.9</com.fasterxml.jackson.core_version>
-    <com.fasterxml.jackson.core_jackson-annotations_version>2.8.8</com.fasterxml.jackson.core_jackson-annotations_version>
+    <com.fasterxml.jackson.core_jackson-annotations_version>2.8.8
+    </com.fasterxml.jackson.core_jackson-annotations_version>
     <com.google.code.findbugs_jsr305_version>3.0.2</com.google.code.findbugs_jsr305_version>
     <com.google.guava_guava_version>23.0</com.google.guava_guava_version>
     <com.google.zxing_version>3.3.0</com.google.zxing_version>
@@ -97,6 +98,7 @@
     <netbeans_nbantext_version>4.0</netbeans_nbantext_version><!-- ref:ant;dep: -->
     <org.apache.ant_ant_version>1.10.1</org.apache.ant_ant_version>
     <org.jmockit_jmockit_version>1.34</org.jmockit_jmockit_version>
+    <org.projectlombok_lombok>1.18.0</org.projectlombok_lombok>
     <org.slf4j_version>1.7.25</org.slf4j_version>
     <org.springframework_version>4.2.0.RELEASE</org.springframework_version>
     <!-- plugins -->
@@ -189,6 +191,11 @@
         <artifactId>jmockit</artifactId>
         <version>${org.jmockit_jmockit_version}</version>
         <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.projectlombok</groupId>
+        <artifactId>lombok</artifactId>
+        <version>${org.projectlombok_lombok}</version>
       </dependency>
       <dependency>
         <groupId>org.slf4j</groupId>
