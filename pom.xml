@@ -1,14 +1,17 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
+
   <groupId>org.shaneking</groupId>
   <artifactId>org.shaneking</artifactId>
   <version>0.0.4</version>
   <packaging>pom</packaging>
+
   <name>ShaneKing</name>
   <description>ShaneKing</description>
   <url>https://github.com/ShaneKing</url>
-  <inceptionYear>2011</inceptionYear>
+  <inceptionYear>2018</inceptionYear>
+
   <organization>
     <name>Azolla</name>
     <url>https://github.com/Azolla</url>
@@ -16,9 +19,9 @@
   <licenses>
     <license>
       <name>MIT</name>
-      <url>https://opensource.org/licenses/MIT</url>
+      <url>https://opensource.org/licenses/Apache-2.0</url>
       <distribution>repo</distribution>
-      <comments>ShaneKing is released under MIT License.</comments>
+      <comments>ShaneKing is released under Apache-2.0 License.</comments>
     </license>
   </licenses>
   <developers>
@@ -54,9 +57,7 @@
       </properties>
     </contributor>
   </contributors>
-  <prerequisites>
-    <maven>3.2.1</maven>
-  </prerequisites>
+
   <scm>
     <connection>scm:git:git@github.com:ShaneKing/org.shaneking.git</connection>
     <developerConnection>scm:git:git@github.com:ShaneKing/org.shaneking.git</developerConnection>
@@ -70,6 +71,10 @@
     <system>Travis-CI</system>
     <url>https://travis-ci.org/ShaneKing/org.shaneking</url>
   </ciManagement>
+
+  <prerequisites>
+    <maven>3.2.1</maven>
+  </prerequisites>
   <distributionManagement>
     <repository>
       <id>oss</id>
@@ -113,6 +118,7 @@
     <maven-surefire-report-plugin.version>2.18.1</maven-surefire-report-plugin.version><!-- org.apache.maven.plugins -->
     <maven-source-plugin.version>3.0.1</maven-source-plugin.version><!-- org.apache.maven.plugins -->
   </properties>
+
   <dependencyManagement>
     <dependencies>
       <dependency>
@@ -304,4 +310,5 @@
       </build>
     </profile>
   </profiles>
+
 </project>
