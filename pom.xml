@@ -4,7 +4,7 @@
 
   <groupId>org.shaneking</groupId>
   <artifactId>org.shaneking</artifactId>
-  <version>0.0.5</version>
+  <version>0.0.7</version>
   <packaging>pom</packaging>
 
   <name>ShaneKing</name>
@@ -88,8 +88,8 @@
     <!-- dependencies -->
     <com.belerweb_pinyin4j_version>2.5.1</com.belerweb_pinyin4j_version>
     <com.fasterxml.jackson.core_version>2.9.6</com.fasterxml.jackson.core_version>
-    <com.fasterxml.jackson.core_jackson-annotations_version>2.9.6
-    </com.fasterxml.jackson.core_jackson-annotations_version>
+    <com.fasterxml.jackson.core_jackson-annotations_version>2.9.6</com.fasterxml.jackson.core_jackson-annotations_version>
+    <com.github.jsqlparser_jsqlparser_version>1.2</com.github.jsqlparser_jsqlparser_version>
     <com.google.code.findbugs_jsr305_version>3.0.2</com.google.code.findbugs_jsr305_version>
     <com.google.guava_guava_version>25.1-jre</com.google.guava_guava_version>
     <com.google.zxing_version>3.3.3</com.google.zxing_version>
@@ -142,6 +142,11 @@
         <groupId>com.fasterxml.jackson.core</groupId>
         <artifactId>jackson-databind</artifactId>
         <version>${com.fasterxml.jackson.core_version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.github.jsqlparser</groupId>
+        <artifactId>jsqlparser</artifactId>
+        <version>${com.github.jsqlparser_jsqlparser_version}</version>
       </dependency>
       <dependency>
         <groupId>com.google.code.findbugs</groupId>
