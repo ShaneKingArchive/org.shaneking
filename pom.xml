@@ -75,6 +75,7 @@
   <prerequisites>
     <maven>3.2.1</maven>
   </prerequisites>
+  <!-- clean deploy -P release -Dgpg.passphrase=分享为shaneking在上海 -->
   <distributionManagement>
     <repository>
       <id>oss</id>
