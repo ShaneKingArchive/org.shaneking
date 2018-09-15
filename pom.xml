@@ -4,7 +4,7 @@
 
   <groupId>org.shaneking</groupId>
   <artifactId>org.shaneking</artifactId>
-  <version>0.0.7</version>
+  <version>0.0.8</version>
   <packaging>pom</packaging>
 
   <name>ShaneKing</name>
@@ -103,13 +103,12 @@
     <log4j_log4j_version>1.2.17</log4j_log4j_version>
     <netbeans_nbantext_version>4.0</netbeans_nbantext_version><!-- ref:ant;dep: -->
     <org.apache.ant_ant_version>1.10.5</org.apache.ant_ant_version>
+    <org.aspectj_version>1.9.1</org.aspectj_version>
     <org.jmockit_jmockit_version>1.40</org.jmockit_jmockit_version>
     <org.projectlombok_lombok>1.18.0</org.projectlombok_lombok>
     <org.slf4j_version>1.7.25</org.slf4j_version>
     <org.springframework_version>5.0.7.RELEASE</org.springframework_version>
     <!-- plugins -->
-    <org.apache.tomcat.maven_tomcat7-maven-plugin_version>2.2</org.apache.tomcat.maven_tomcat7-maven-plugin_version>
-    <org.jacoco_jacoco-maven-plugin_version>0.8.1</org.jacoco_jacoco-maven-plugin_version>
     <maven-compiler-plugin.version>3.7.0</maven-compiler-plugin.version><!-- org.apache.maven -->
     <maven-gpg-plugin.version>1.6</maven-gpg-plugin.version><!-- org.apache.maven.plugins -->
     <maven-javadoc-plugin.version>3.0.1</maven-javadoc-plugin.version><!-- org.apache.maven.plugins -->
@@ -118,8 +117,11 @@
     <maven-surefire-plugin.version>2.22.0</maven-surefire-plugin.version><!-- org.apache.maven.plugins -->
     <maven-surefire-report-plugin.version>2.22.0</maven-surefire-report-plugin.version><!-- org.apache.maven.plugins -->
     <maven-source-plugin.version>3.0.1</maven-source-plugin.version><!-- org.apache.maven.plugins -->
-    <sh.tak.appbundler_appbundle-maven-plugin.version>1.2.0
-    </sh.tak.appbundler_appbundle-maven-plugin.version><!-- org.apache.maven.plugins -->
+    <org.apache.tomcat.maven_tomcat7-maven-plugin_version>2.2</org.apache.tomcat.maven_tomcat7-maven-plugin_version>
+    <org.aspectj_aspectj-maven-plugin.version>1.11</org.aspectj_aspectj-maven-plugin.version><!-- org.apache.maven -->
+    <org.jacoco_jacoco-maven-plugin_version>0.8.1</org.jacoco_jacoco-maven-plugin_version>
+    <org.projectlombok_lombok-maven-plugin_version>1.18.0.0</org.projectlombok_lombok-maven-plugin_version>
+    <sh.tak.appbundler_appbundle-maven-plugin.version>1.2.0</sh.tak.appbundler_appbundle-maven-plugin.version><!-- org.apache.maven.plugins -->
   </properties>
 
   <dependencyManagement>
@@ -201,6 +203,16 @@
         <version>${org.apache.ant_ant_version}</version>
       </dependency>
       <dependency>
+        <groupId>org.aspectj</groupId>
+        <artifactId>aspectjrt</artifactId>
+        <version>${org.aspectj_version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.aspectj</groupId>
+        <artifactId>aspectjweaver</artifactId>
+        <version>${org.aspectj_version}</version>
+      </dependency>
+      <dependency>
         <groupId>org.jmockit</groupId>
         <artifactId>jmockit</artifactId>
         <version>${org.jmockit_jmockit_version}</version>
@@ -263,6 +275,57 @@
               <checkModificationExclude>pom.xml</checkModificationExclude>
             </checkModificationExcludes>
           </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>aspectj-maven-plugin</artifactId>
+          <version>${org.aspectj_aspectj-maven-plugin.version}</version>
+          <configuration>
+            <source>${maven.compile.source}</source>
+            <target>${maven.compile.target}</target>
+            <complianceLevel>${maven.compile.target}</complianceLevel>
+            <!--<verbose>true</verbose>-->
+          </configuration>
+          <executions>
+            <execution>
+              <goals>
+                <goal>compile</goal>
+                <goal>test-compile</goal>
+              </goals>
+              <configuration>
+                <showWeaveInfo>true</showWeaveInfo>
+              </configuration>
+            </execution>
+          </executions>
+        </plugin>
+        <plugin>
+          <groupId>org.projectlombok</groupId>
+          <artifactId>lombok-maven-plugin</artifactId>
+          <version>${org.projectlombok_lombok-maven-plugin_version}</version>
+          <executions>
+            <execution>
+              <id>delombok-main</id>
+              <phase>generate-sources</phase>
+              <goals>
+                <goal>delombok</goal>
+              </goals>
+              <configuration>
+                <addOutputDirectory>false</addOutputDirectory>
+                <sourceDirectory>src/main/java</sourceDirectory>
+              </configuration>
+            </execution>
+            <execution>
+              <id>delombok-test</id>
+              <phase>generate-test-sources</phase>
+              <goals>
+                <goal>testDelombok</goal>
+              </goals>
+              <configuration>
+                <addOutputDirectory>false</addOutputDirectory>
+                <sourceDirectory>src/test/java</sourceDirectory>
+              </configuration>
+            </execution>
+          </executions>
         </plugin>
       </plugins>
     </pluginManagement>
