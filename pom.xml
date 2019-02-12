@@ -88,7 +88,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <!-- dependencies -->
     <com.belerweb_pinyin4j_version>2.5.1</com.belerweb_pinyin4j_version>
-    <com.fasterxml.jackson.core_version>2.9.6</com.fasterxml.jackson.core_version>
+    <com.fasterxml.jackson.core_version>2.9.8</com.fasterxml.jackson.core_version>
     <com.fasterxml.jackson.core_jackson-annotations_version>2.9.6</com.fasterxml.jackson.core_jackson-annotations_version>
     <com.github.jsqlparser_jsqlparser_version>1.2</com.github.jsqlparser_jsqlparser_version>
     <com.google.code.findbugs_jsr305_version>3.0.2</com.google.code.findbugs_jsr305_version>
