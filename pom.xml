@@ -109,7 +109,7 @@
     <org.slf4j_version>1.7.25</org.slf4j_version>
     <org.springframework_version>5.0.7.RELEASE</org.springframework_version>
     <!-- plugins -->
-    <maven-compiler-plugin.version>3.7.0</maven-compiler-plugin.version><!-- org.apache.maven -->
+    <maven-compiler-plugin.version>3.8.0</maven-compiler-plugin.version><!-- org.apache.maven -->
     <maven-gpg-plugin.version>1.6</maven-gpg-plugin.version><!-- org.apache.maven.plugins -->
     <maven-javadoc-plugin.version>3.0.1</maven-javadoc-plugin.version><!-- org.apache.maven.plugins -->
     <maven-release-plugin.version>2.5.3</maven-release-plugin.version><!-- org.apache.maven.plugins -->
