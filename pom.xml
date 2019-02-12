@@ -103,7 +103,7 @@
     <log4j_log4j_version>1.2.17</log4j_log4j_version>
     <netbeans_nbantext_version>4.0</netbeans_nbantext_version><!-- ref:ant;dep: -->
     <org.apache.ant_ant_version>1.10.5</org.apache.ant_ant_version>
-    <org.aspectj_version>1.9.1</org.aspectj_version>
+    <org.aspectj_version>1.9.2</org.aspectj_version>
     <org.jmockit_jmockit_version>1.40</org.jmockit_jmockit_version>
     <org.projectlombok_lombok>1.18.0</org.projectlombok_lombok>
     <org.slf4j_version>1.7.25</org.slf4j_version>
