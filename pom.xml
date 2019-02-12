@@ -119,7 +119,7 @@
     <maven-source-plugin.version>3.0.1</maven-source-plugin.version><!-- org.apache.maven.plugins -->
     <org.apache.tomcat.maven_tomcat7-maven-plugin_version>2.2</org.apache.tomcat.maven_tomcat7-maven-plugin_version>
     <org.aspectj_aspectj-maven-plugin.version>1.11</org.aspectj_aspectj-maven-plugin.version><!-- org.apache.maven -->
-    <org.jacoco_jacoco-maven-plugin_version>0.8.1</org.jacoco_jacoco-maven-plugin_version>
+    <org.jacoco_jacoco-maven-plugin_version>0.8.3</org.jacoco_jacoco-maven-plugin_version>
     <org.projectlombok_lombok-maven-plugin_version>1.18.0.0</org.projectlombok_lombok-maven-plugin_version>
     <sh.tak.appbundler_appbundle-maven-plugin.version>1.2.0</sh.tak.appbundler_appbundle-maven-plugin.version><!-- org.apache.maven.plugins -->
   </properties>
