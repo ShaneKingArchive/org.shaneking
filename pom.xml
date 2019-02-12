@@ -104,7 +104,7 @@
     <netbeans_nbantext_version>4.0</netbeans_nbantext_version><!-- ref:ant;dep: -->
     <org.apache.ant_ant_version>1.10.5</org.apache.ant_ant_version>
     <org.aspectj_version>1.9.1</org.aspectj_version>
-    <org.jmockit_jmockit_version>1.40</org.jmockit_jmockit_version>
+    <org.jmockit_jmockit_version>1.45</org.jmockit_jmockit_version>
     <org.projectlombok_lombok>1.18.0</org.projectlombok_lombok>
     <org.slf4j_version>1.7.25</org.slf4j_version>
     <org.springframework_version>5.0.7.RELEASE</org.springframework_version>
