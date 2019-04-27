@@ -4,7 +4,7 @@
 
   <groupId>org.shaneking</groupId>
   <artifactId>org.shaneking.parent</artifactId>
-  <version>0.0.3</version>
+  <version>0.0.4</version>
   <packaging>pom</packaging>
 
   <name>Maven Top Project For ShaneKing</name>
@@ -59,17 +59,17 @@
   </contributors>
 
   <scm>
-    <connection>scm:git:git@github.com:ShaneKing/org.shaneking.git</connection>
-    <developerConnection>scm:git:git@github.com:ShaneKing/org.shaneking.git</developerConnection>
-    <url>git@github.com:ShaneKing/org.shaneking.git</url>
+    <connection>scm:git:git@github.com:ShaneKing/org.shaneking.parent.git</connection>
+    <developerConnection>scm:git:git@github.com:ShaneKing/org.shaneking.parent.git</developerConnection>
+    <url>git@github.com:ShaneKing/org.shaneking.parent.git</url>
   </scm>
   <issueManagement>
     <system>Github</system>
-    <url>https://github.com/ShaneKing/org.shaneking/issues</url>
+    <url>https://github.com/ShaneKing/org.shaneking.parent/issues</url>
   </issueManagement>
   <ciManagement>
     <system>Travis-CI</system>
-    <url>https://travis-ci.org/ShaneKing/org.shaneking</url>
+    <url>https://travis-ci.org/ShaneKing/org.shaneking.parent</url>
   </ciManagement>
 
   <!-- clean deploy -P release -Dgpg.passphrase=分享为shaneking在上海 -->
@@ -97,7 +97,6 @@
     <junit_junit_version>4.12</junit_junit_version>
     <!-- <org.aspectj_version>1.9.3</org.aspectj_version> -->
     <org.aspectj_version>1.8.9</org.aspectj_version><!--com.github.shaneking_aspectj-junit-runner-->
-    <org.jmockit_jmockit_version>1.46</org.jmockit_jmockit_version>
     <org.projectlombok_lombok>1.18.6</org.projectlombok_lombok>
     <org.slf4j_version>1.7.26</org.slf4j_version>
     <!-- build plugins -->
@@ -217,6 +216,7 @@
   <build>
     <pluginManagement>
       <plugins>
+        <!--compile-->
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-compiler-plugin</artifactId>
@@ -226,16 +226,7 @@
             <target>${maven.compile.target}</target>
           </configuration>
         </plugin>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-release-plugin</artifactId>
-          <version>${maven-release-plugin.version}</version>
-          <configuration>
-            <checkModificationExcludes>
-              <checkModificationExclude>pom.xml</checkModificationExclude>
-            </checkModificationExcludes>
-          </configuration>
-        </plugin>
+        <!--test-->
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-surefire-plugin</artifactId>
@@ -243,8 +234,11 @@
           <configuration>
             <!-- 使用 maven-surefire-plugin来执行单元测试。 将surefireArgLine赋值给argLine参数，以保证在测试执行时Jacoco agent处于运行状态。 -->
             <argLine>${surefireArgLine}</argLine>
+            <useManifestOnlyJar>false</useManifestOnlyJar>
+            <useSystemClassLoader>true</useSystemClassLoader>
           </configuration>
         </plugin>
+        <!--test:coverage-->
         <plugin>
           <groupId>org.jacoco</groupId>
           <artifactId>jacoco-maven-plugin</artifactId>
