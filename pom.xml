@@ -4,10 +4,10 @@
 
   <groupId>org.shaneking</groupId>
   <artifactId>org.shaneking.parent</artifactId>
-  <version>0.0.4</version>
+  <version>${revision.parent}</version>
   <packaging>pom</packaging>
 
-  <name>Maven Top Project For ShaneKing</name>
+  <name>Maven Top Project for ShaneKing</name>
   <description>Maven Top Project For ShaneKing</description>
   <url>https://github.com/ShaneKing/org.shaneking.parent</url>
   <inceptionYear>2011-2019</inceptionYear>
@@ -80,6 +80,7 @@
     </repository>
   </distributionManagement>
   <properties>
+    <revision.parent>0.2.0</revision.parent>
     <maven.compile.source>1.8</maven.compile.source>
     <maven.compile.target>1.8</maven.compile.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -111,6 +112,13 @@
     <maven-javadoc-plugin.version>3.1.0</maven-javadoc-plugin.version>
     <maven-source-plugin.version>3.0.1</maven-source-plugin.version>
   </properties>
+
+  <modules>
+    <module>../org.shaneking.aspectj</module>
+    <module>../org.shaneking.jsqlparser</module>
+    <module>../org.shaneking.skava</module>
+    <module>../org.shaneking.sql</module>
+  </modules>
 
   <dependencyManagement>
     <dependencies>
