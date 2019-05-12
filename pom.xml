@@ -80,7 +80,7 @@
     </repository>
   </distributionManagement>
   <properties>
-    <revisionParent>0.2.0</revisionParent>
+    <revisionParent>0.2.1</revisionParent>
     <maven.compile.source>1.8</maven.compile.source>
     <maven.compile.target>1.8</maven.compile.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -113,6 +113,9 @@
     <maven-source-plugin.version>3.0.1</maven-source-plugin.version>
   </properties>
 
+  <!-- mvn versions:set -DnewVersion=0.2.1 -->
+  <!-- mvn -N versions:update-child-modules -->
+  <!-- mvn versions:commit -->
   <modules>
     <module>../org.shaneking.aspectj</module>
     <module>../org.shaneking.jsqlparser</module>
