@@ -4,7 +4,7 @@
 
   <groupId>org.shaneking</groupId>
   <artifactId>org.shaneking.parent</artifactId>
-  <version>${revisionParent}</version>
+  <version>0.2.1</version>
   <packaging>pom</packaging>
 
   <name>Maven Top Project for ShaneKing</name>
@@ -80,7 +80,6 @@
     </repository>
   </distributionManagement>
   <properties>
-    <revisionParent>0.2.1</revisionParent>
     <maven.compile.source>1.8</maven.compile.source>
     <maven.compile.target>1.8</maven.compile.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -113,7 +112,7 @@
     <maven-source-plugin.version>3.0.1</maven-source-plugin.version>
   </properties>
 
-  <!-- mvn versions:set -DnewVersion=0.2.1 -->
+  <!-- mvn -N versions:set -DnewVersion=0.2.1 -->
   <!-- mvn -N versions:update-child-modules -->
   <!-- mvn versions:commit -->
   <modules>
@@ -224,7 +223,7 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
-  <!-- mvn clean install -DrevisionParent=0.2.1 -->
+  <!-- mvn clean install -->
   <build>
     <pluginManagement>
       <plugins>
@@ -284,7 +283,7 @@
       </plugins>
     </pluginManagement>
   </build>
-  <!-- mvn clean deploy -P release -Dgpg.passphrase=分享为shaneking在上海 -DrevisionParent=0.2.1 -->
+  <!-- mvn clean deploy -P release -Dgpg.passphrase=分享为shaneking在上海 -->
   <profiles>
     <profile>
       <id>release</id>
