@@ -4,7 +4,7 @@
 
   <groupId>org.shaneking</groupId>
   <artifactId>org.shaneking.parent</artifactId>
-  <version>${revision.parent}</version>
+  <version>${revisionParent}</version>
   <packaging>pom</packaging>
 
   <name>Maven Top Project for ShaneKing</name>
@@ -72,7 +72,7 @@
     <url>https://travis-ci.org/ShaneKing/org.shaneking.parent</url>
   </ciManagement>
 
-  <!-- clean deploy -P release -Dgpg.passphrase=分享为shaneking在上海 -->
+
   <distributionManagement>
     <repository>
       <id>oss</id>
@@ -80,7 +80,7 @@
     </repository>
   </distributionManagement>
   <properties>
-    <revision.parent>0.2.0</revision.parent>
+    <revisionParent>0.2.0</revisionParent>
     <maven.compile.source>1.8</maven.compile.source>
     <maven.compile.target>1.8</maven.compile.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -221,6 +221,7 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
+  <!-- mvn clean install -DrevisionParent=0.2.1 -->
   <build>
     <pluginManagement>
       <plugins>
@@ -280,12 +281,13 @@
       </plugins>
     </pluginManagement>
   </build>
+  <!-- mvn clean deploy -P release -Dgpg.passphrase=分享为shaneking在上海 -DrevisionParent=0.2.1 -->
   <profiles>
     <profile>
       <id>release</id>
       <build>
         <plugins>
-          <!-- GPG:clean deploy -P release -Dgpg.passphrase=分享为shaneking在上海 -->
+          <!-- GPG:-Dgpg.passphrase=分享为shaneking在上海 -->
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-gpg-plugin</artifactId>
