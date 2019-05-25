@@ -11,7 +11,11 @@ jdk:
 before_install:
   - pip install --user codecov
 
-script: mvn test -B -N
+install:
+  - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V -N
+
+script:
+  - mvn test -B -N
 
 after_success:
   - codecov
