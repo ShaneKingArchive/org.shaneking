@@ -11,5 +11,7 @@ jdk:
 before_install:
   - pip install --user codecov
 
+script: mvn test -B -N
+
 after_success:
   - codecov
