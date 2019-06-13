@@ -4,7 +4,7 @@
 
   <groupId>org.shaneking</groupId>
   <artifactId>org.shaneking</artifactId>
-  <version>0.4.7</version>
+  <version>0.4.8</version>
   <packaging>pom</packaging>
 
   <name>Maven Top Project for ShaneKing</name>
