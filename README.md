@@ -1,5 +1,5 @@
 # [ShaneKing][]
-More to see [shaneking.org][].
+Ⓜ️Maven Top Project For ShaneKing, More to see [shaneking.org][].
 
 ## Dependencies
 [![][versioneye img]][versioneye]
@@ -35,7 +35,7 @@ ShaneKing is released under [Apache-2.0][].
 [codecov]:https://codecov.io/github/ShaneKing/org.shaneking?branch=mirror
 [codecov img]:https://codecov.io/github/ShaneKing/org.shaneking/coverage.svg?branch=mirror
 [codacy]:https://www.codacy.com/app/ShaneKing/org-shaneking
-[codacy img]:https://api.codacy.com/project/badge/grade/e4f1c3dc762f476d8dc6643755d168dc
+[codacy img]:https://api.codacy.com/project/badge/grade/e9a75be64b0443aab990e0d56d8ee425
 [saucelabs]:https://saucelabs.com/u/ShaneKing
 [saucelabs img]:https://saucelabs.com/browser-matrix/ShaneKing.svg
 
