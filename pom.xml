@@ -113,6 +113,7 @@
   <!-- Unused : mvn -N versions:update-child-modules -->
   <modules>
     <module>../org.shaneking.skava</module>
+    <module>../org.shaneking.skavax</module>
     <module>../org.shaneking.sql</module>
   </modules>
 
