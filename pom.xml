@@ -4,7 +4,7 @@
 
   <groupId>org.shaneking</groupId>
   <artifactId>org.shaneking</artifactId>
-  <version>0.7.17</version>
+  <version>0.8.0</version>
   <packaging>pom</packaging>
 
   <name>Maven Top Project for ShaneKing</name>
@@ -84,31 +84,31 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <!-- dependencies -->
     <com.belerweb_pinyin4j_version>2.5.1</com.belerweb_pinyin4j_version>
-    <com.fasterxml.jackson.core_version>2.9.8</com.fasterxml.jackson.core_version>
-    <com.google.guava_guava_version>27.1-jre</com.google.guava_guava_version>
-    <com.google.zxing_version>3.3.3</com.google.zxing_version>
-    <commons-codec_commons-codec_version>1.12</commons-codec_commons-codec_version>
+    <com.fasterxml.jackson.core_version>2.10.0</com.fasterxml.jackson.core_version>
+    <com.google.guava_guava_version>28.1-jre</com.google.guava_guava_version>
+    <com.google.zxing_version>3.4.0</com.google.zxing_version>
+    <commons-codec_commons-codec_version>1.13</commons-codec_commons-codec_version>
     <commons-io_commons-io_version>2.6</commons-io_commons-io_version>
     <commons-net_commons-net_version>3.6</commons-net_commons-net_version>
     <javax.persistence_persistence-api_version>1.0.2</javax.persistence_persistence-api_version>
     <javax.servlet_javax.servlet-api_version>4.0.1</javax.servlet_javax.servlet-api_version>
     <junit_junit_version>4.12</junit_junit_version>
-    <org.mockito_mockito-core_version>2.28.2</org.mockito_mockito-core_version>
-    <org.projectlombok_lombok_version>1.18.6</org.projectlombok_lombok_version>
-    <org.slf4j_version>1.7.26</org.slf4j_version>
+    <org.mockito_mockito-core_version>3.1.0</org.mockito_mockito-core_version>
+    <org.projectlombok_lombok_version>1.18.10</org.projectlombok_lombok_version>
+    <org.slf4j_version>1.7.28</org.slf4j_version>
     <!-- build plugins -->
-    <maven-compiler-plugin.version>3.8.0</maven-compiler-plugin.version>
+    <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
     <maven-release-plugin.version>2.5.3</maven-release-plugin.version>
-    <maven-surefire-plugin.version>2.22.1</maven-surefire-plugin.version>
-    <org.jacoco_jacoco-maven-plugin_version>0.8.1</org.jacoco_jacoco-maven-plugin_version>
+    <maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
+    <org.jacoco_jacoco-maven-plugin_version>0.8.5</org.jacoco_jacoco-maven-plugin_version>
     <sh.tak.appbundler_appbundle-maven-plugin_version>1.2.0</sh.tak.appbundler_appbundle-maven-plugin_version><!-- g2048 -->
     <!-- profile plugins -->
     <maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
-    <maven-javadoc-plugin.version>3.1.0</maven-javadoc-plugin.version>
-    <maven-source-plugin.version>3.0.1</maven-source-plugin.version>
+    <maven-javadoc-plugin.version>3.1.1</maven-javadoc-plugin.version>
+    <maven-source-plugin.version>3.1.0</maven-source-plugin.version>
   </properties>
 
-  <!-- mvn -N versions:set -DnewVersion=0.7.17 -->
+  <!-- mvn -N versions:set -DnewVersion=0.8.0 -->
   <!-- mvn versions:commit -->
   <!-- Unused : mvn -N versions:update-child-modules -->
   <modules>
