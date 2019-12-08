@@ -4,7 +4,7 @@
 
   <groupId>org.shaneking</groupId>
   <artifactId>org.shaneking</artifactId>
-  <version>0.9.6</version>
+  <version>0.10.0</version>
   <packaging>pom</packaging>
 
   <name>Maven Top Project for ShaneKing</name>
@@ -108,16 +108,15 @@
     <maven-source-plugin.version>3.1.0</maven-source-plugin.version>
   </properties>
 
-  <!-- mvn -N versions:set -DnewVersion=0.9.6 -->
+  <!-- mvn -N versions:set -DnewVersion=0.10.0 -->
   <!-- mvn versions:commit -->
   <!-- Unused : mvn -N versions:update-child-modules -->
   <modules>
-    <module>../org.shaneking.ling</module>
+    <module>../org.shaneking.skava</module>
     <module>../org.shaneking.codec</module>
     <module>../org.shaneking.jackson</module>
-    <module>../org.shaneking.skava</module>
-    <module>../org.shaneking.skavax</module>
     <module>../org.shaneking.sql</module>
+    <module>../org.shaneking.skavax</module>
   </modules>
 
   <dependencyManagement>
