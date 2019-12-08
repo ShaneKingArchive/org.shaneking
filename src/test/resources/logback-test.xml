@@ -7,7 +7,7 @@
       <charset>UTF-8</charset>
     </encoder>
     <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
-      <level>info</level><!-- >info -->
+      <level>debug</level><!-- >debug -->
     </filter>
   </appender>
   <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
@@ -17,7 +17,7 @@
     </encoder>
     <file>${sklog.path}/org.shaneking.log</file>
     <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
-      <level>info</level><!-- >info -->
+      <level>debug</level><!-- >debug -->
     </filter>
     <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
       <fileNamePattern>${sklog.path}/org.shaneking-%d{yyyy-MM-dd}.%i.log</fileNamePattern><!-- Rolling Policy: By Date By Size -->
@@ -27,7 +27,7 @@
       <maxHistory>32</maxHistory><!-- Day -->
     </rollingPolicy>
   </appender>
-  <root level="info"><!-- >info -->
+  <root level="debug"><!-- >debug -->
     <appender-ref ref="CONSOLE"/>
     <appender-ref ref="FILE"/>
   </root>
@@ -40,7 +40,7 @@
     </encoder>
     <file>${sklog.path}/org.shaneking.xxx.log</file>
     <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
-      <level>info</level><!-- >info -->
+      <level>debug</level><!-- >debug -->
     </filter>
     <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
       <fileNamePattern>${sklog.path}/org.shaneking.xxx-%d{yyyy-MM-dd}.%i.log</fileNamePattern><!-- Rolling Policy: By Date By Size -->
@@ -50,7 +50,7 @@
       <maxHistory>32</maxHistory><!-- Day -->
     </rollingPolicy>
   </appender>
-  <logger name="org.shaneking.xxx" level="info" additifiltervity="false"><!-- additifiltervity=false : the org.shaneking.xxx log just output to this logger -->
+  <logger name="org.shaneking.xxx" level="debug" additifiltervity="false"><!-- additifiltervity=false : the org.shaneking.xxx log just output to this logger -->
     <appender-ref ref="SPECIAL_PACKAGE_FILE"/>
   </logger>
 

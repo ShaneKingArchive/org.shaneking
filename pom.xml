@@ -112,6 +112,9 @@
   <!-- mvn versions:commit -->
   <!-- Unused : mvn -N versions:update-child-modules -->
   <modules>
+    <module>../org.shaneking.ling</module>
+    <module>../org.shaneking.codec</module>
+    <module>../org.shaneking.jackson</module>
     <module>../org.shaneking.skava</module>
     <module>../org.shaneking.skavax</module>
     <module>../org.shaneking.sql</module>
