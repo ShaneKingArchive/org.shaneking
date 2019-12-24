@@ -1,275 +1,321 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-	<groupId>org.shaneking</groupId>
-	<artifactId>org.shaneking</artifactId>
-	<version>0.0.1</version>
-	<packaging>pom</packaging>
-	<name>ShaneKing</name>
-	<description>ShaneKing</description>
-	<url>https://github.com/ShaneKing</url>
-	<inceptionYear>2011</inceptionYear>
-	<organization>
-		<name>Azolla</name>
-		<url>https://github.com/Azolla</url>
-	</organization>
-	<licenses>
-		<license>
-			<name>MIT</name>
-			<url>https://opensource.org/licenses/MIT</url>
-			<distribution>repo</distribution>
-			<comments>ShaneKing is released under MIT License.</comments>
-		</license>
-	</licenses>
-	<developers>
-		<developer>
-			<id>ShaneKing</id>
-			<name>ShaneKing</name>
-			<email>github@azolla.org</email>
-			<url>https://github.com/ShaneKing</url>
-			<organization>Azolla</organization>
-			<organizationUrl>https://github.com/Azolla</organizationUrl>
-			<roles>
-				<role>Developer</role>
-			</roles>
-			<timezone>+8</timezone>
-			<properties>
-				<dept>No</dept>
-			</properties>
-		</developer>
-	</developers>
-	<contributors>
-		<contributor>
-			<name>Maogu</name>
-			<email>git@azolla.org</email>
-			<url>https://github.com/Maogu</url>
-			<organization>Azolla</organization>
-			<organizationUrl>https://github.com/Azolla</organizationUrl>
-			<roles>
-				<role>Developer</role>
-			</roles>
-			<timezone>+8</timezone>
-			<properties>
-				<dept>No</dept>
-			</properties>
-		</contributor>
-	</contributors>
-	<prerequisites>
-		<maven>3.2.1</maven>
-	</prerequisites>
-	<scm>
-		<connection>scm:git:git@github.com:ShaneKing/org.shaneking.git</connection>
-		<developerConnection>scm:git:git@github.com:ShaneKing/org.shaneking.git</developerConnection>
-		<url>git@github.com:ShaneKing/org.shaneking.git</url>
-	</scm>
-	<issueManagement>
-		<system>Github</system>
-		<url>https://github.com/ShaneKing/org.shaneking/issues</url>
-	</issueManagement>
-	<ciManagement>
-		<system>Travis-CI</system>
-		<url>https://travis-ci.org/ShaneKing/org.shaneking</url>
-	</ciManagement>
-	<distributionManagement>
-		<repository>
-			<id>oss</id>
-			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
-		</repository>
-	</distributionManagement>
-	<properties>
-		<maven.compile.source>1.8</maven.compile.source>
-		<maven.compile.target>1.8</maven.compile.target>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<!-- dependencies -->
-    <com.alibaba_fastjson_version>1.2.7</com.alibaba_fastjson_version>
-    <com.belerweb_pinyin4j_version>2.5.0</com.belerweb_pinyin4j_version>
-    <com.google.code.findbugs_jsr305_version>3.0.0</com.google.code.findbugs_jsr305_version>
-    <com.google.code.gson_gson_version>2.4</com.google.code.gson_gson_version>
-    <com.google.guava_guava_version>18.0</com.google.guava_guava_version>
-    <com.google.zxing_version>3.2.0</com.google.zxing_version>
-    <commons-io_commons-io_version>2.4</commons-io_commons-io_version>
-    <commons-net_commons-net_version>3.3</commons-net_commons-net_version>
-    <javax.servlet_javax.servlet-api_version>3.1.0</javax.servlet_javax.servlet-api_version>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>org.shaneking</groupId>
+  <artifactId>org.shaneking</artifactId>
+  <version>0.10.0</version>
+  <packaging>pom</packaging>
+
+  <name>Maven Top Project for ShaneKing</name>
+  <description>Maven Top Project For ShaneKing</description>
+  <url>https://github.com/ShaneKing/org.shaneking</url>
+  <inceptionYear>2011-2019</inceptionYear>
+
+  <organization>
+    <name>Azolla</name>
+    <url>https://github.com/Azolla</url>
+  </organization>
+  <licenses>
+    <license>
+      <name>MIT</name>
+      <url>https://opensource.org/licenses/Apache-2.0</url>
+      <distribution>repo</distribution>
+      <comments>ShaneKing is released under Apache-2.0 License.</comments>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>ShaneKing</id>
+      <name>ShaneKing</name>
+      <email>github@azolla.org</email>
+      <url>https://github.com/ShaneKing</url>
+      <organization>Azolla</organization>
+      <organizationUrl>https://github.com/Azolla</organizationUrl>
+      <roles>
+        <role>Developer</role>
+      </roles>
+      <timezone>+8</timezone>
+      <properties>
+        <dept>No</dept>
+      </properties>
+    </developer>
+  </developers>
+  <contributors>
+    <contributor>
+      <name>Maogu</name>
+      <email>git@azolla.org</email>
+      <url>https://github.com/Maogu</url>
+      <organization>Azolla</organization>
+      <organizationUrl>https://github.com/Azolla</organizationUrl>
+      <roles>
+        <role>Developer</role>
+      </roles>
+      <timezone>+8</timezone>
+      <properties>
+        <dept>No</dept>
+      </properties>
+    </contributor>
+  </contributors>
+
+  <scm>
+    <connection>scm:git:git@github.com:ShaneKing/org.shaneking.git</connection>
+    <developerConnection>scm:git:git@github.com:ShaneKing/org.shaneking.git</developerConnection>
+    <url>git@github.com:ShaneKing/org.shaneking.git</url>
+  </scm>
+  <issueManagement>
+    <system>Github</system>
+    <url>https://github.com/ShaneKing/org.shaneking/issues</url>
+  </issueManagement>
+  <ciManagement>
+    <system>Travis-CI</system>
+    <url>https://travis-ci.org/ShaneKing/org.shaneking</url>
+  </ciManagement>
+
+  <distributionManagement>
+    <repository>
+      <id>oss</id>
+      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+    </repository>
+  </distributionManagement>
+  <properties>
+    <maven.compile.source>1.8</maven.compile.source>
+    <maven.compile.target>1.8</maven.compile.target>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <!-- dependencies -->
+    <com.belerweb_pinyin4j_version>2.5.1</com.belerweb_pinyin4j_version>
+    <com.fasterxml.jackson.core_version>2.10.0</com.fasterxml.jackson.core_version>
+    <com.google.guava_guava_version>28.1-jre</com.google.guava_guava_version>
+    <com.google.zxing_version>3.4.0</com.google.zxing_version>
+    <commons-codec_commons-codec_version>1.13</commons-codec_commons-codec_version>
+    <commons-io_commons-io_version>2.6</commons-io_commons-io_version>
+    <commons-net_commons-net_version>3.6</commons-net_commons-net_version>
+    <javax.persistence_persistence-api_version>1.0.2</javax.persistence_persistence-api_version>
+    <javax.servlet_javax.servlet-api_version>4.0.1</javax.servlet_javax.servlet-api_version>
     <junit_junit_version>4.12</junit_junit_version>
-    <log4j_log4j_version>1.2.17</log4j_log4j_version>
-    <netbeans_nbantext_version>4.0</netbeans_nbantext_version><!-- ref:ant;dep: -->
-    <org.apache.ant_ant_version>1.9.6</org.apache.ant_ant_version>
-    <org.slf4j_version>1.7.12</org.slf4j_version>
-    <org.springframework_version>4.2.0.RELEASE</org.springframework_version>
-    <!-- plugins -->
-    <org.apache.tomcat.maven_tomcat7-maven-plugin_version>2.2</org.apache.tomcat.maven_tomcat7-maven-plugin_version>
-    <org.jacoco_jacoco-maven-plugin_version>0.7.5.201505241946</org.jacoco_jacoco-maven-plugin_version>
-		<maven-compiler-plugin.version>3.3</maven-compiler-plugin.version><!-- org.apache.maven -->
-		<maven-gpg-plugin.version>1.6</maven-gpg-plugin.version><!-- org.apache.maven.plugins -->
-		<maven-javadoc-plugin.version>2.10.3</maven-javadoc-plugin.version><!-- org.apache.maven.plugins -->
-		<maven-release-plugin.version>2.5.2</maven-release-plugin.version><!-- org.apache.maven.plugins -->
-		<maven-resources-plugin.version>2.7</maven-resources-plugin.version><!-- org.apache.maven.plugins -->
-		<maven-surefire-plugin.version>2.18.1</maven-surefire-plugin.version><!-- org.apache.maven.plugins -->
-		<maven-surefire-report-plugin.version>2.18.1</maven-surefire-report-plugin.version><!-- org.apache.maven.plugins -->
-		<maven-source-plugin.version>2.4</maven-source-plugin.version><!-- org.apache.maven.plugins -->
-	</properties>
-	<dependencyManagement>
-		<dependencies>
+    <org.mockito_mockito-core_version>3.1.0</org.mockito_mockito-core_version>
+    <org.projectlombok_lombok_version>1.18.10</org.projectlombok_lombok_version>
+    <org.slf4j_version>1.7.28</org.slf4j_version>
+    <!-- build plugins -->
+    <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
+    <maven-release-plugin.version>2.5.3</maven-release-plugin.version>
+    <maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
+    <org.jacoco_jacoco-maven-plugin_version>0.8.5</org.jacoco_jacoco-maven-plugin_version>
+    <sh.tak.appbundler_appbundle-maven-plugin_version>1.2.0</sh.tak.appbundler_appbundle-maven-plugin_version><!-- g2048 -->
+    <!-- profile plugins -->
+    <maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
+    <maven-javadoc-plugin.version>3.1.1</maven-javadoc-plugin.version>
+    <maven-source-plugin.version>3.1.0</maven-source-plugin.version>
+  </properties>
+
+  <!-- mvn -N versions:set -DnewVersion=0.10.0 -->
+  <!-- mvn versions:commit -->
+  <!-- Unused : mvn -N versions:update-child-modules -->
+  <modules>
+    <module>../org.shaneking.skava</module>
+    <module>../org.shaneking.codec</module>
+    <module>../org.shaneking.jackson</module>
+    <module>../org.shaneking.sql</module>
+    <module>../org.shaneking.skavax</module>
+  </modules>
+
+  <dependencyManagement>
+    <dependencies>
       <dependency>
-          <groupId>com.alibaba</groupId>
-          <artifactId>fastjson</artifactId>
-          <version>${com.alibaba_fastjson_version}</version>
+        <groupId>com.belerweb</groupId>
+        <artifactId>pinyin4j</artifactId>
+        <version>${com.belerweb_pinyin4j_version}</version>
       </dependency>
       <dependency>
-          <groupId>com.belerweb</groupId>
-          <artifactId>pinyin4j</artifactId>
-          <version>${com.belerweb_pinyin4j_version}</version>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-annotations</artifactId>
+        <version>${com.fasterxml.jackson.core_version}</version>
       </dependency>
       <dependency>
-          <groupId>com.google.code.findbugs</groupId>
-          <artifactId>jsr305</artifactId>
-          <version>${com.google.code.findbugs_jsr305_version}</version>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-core</artifactId>
+        <version>${com.fasterxml.jackson.core_version}</version>
       </dependency>
       <dependency>
-          <groupId>com.google.code.gson</groupId>
-          <artifactId>gson</artifactId>
-          <version>${com.google.code.gson_gson_version}</version>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-databind</artifactId>
+        <version>${com.fasterxml.jackson.core_version}</version>
       </dependency>
       <dependency>
-          <groupId>com.google.guava</groupId>
-          <artifactId>guava</artifactId>
-          <version>${com.google.guava_guava_version}</version>
+        <groupId>com.google.guava</groupId>
+        <artifactId>guava</artifactId>
+        <version>${com.google.guava_guava_version}</version>
       </dependency>
       <dependency>
-          <groupId>com.google.zxing</groupId>
-          <artifactId>core</artifactId>
-          <version>${com.google.zxing_version}</version>
+        <groupId>com.google.zxing</groupId>
+        <artifactId>core</artifactId>
+        <version>${com.google.zxing_version}</version>
       </dependency>
       <dependency>
-          <groupId>com.google.zxing</groupId>
-          <artifactId>javase</artifactId>
-          <version>${com.google.zxing_version}</version>
+        <groupId>com.google.zxing</groupId>
+        <artifactId>javase</artifactId>
+        <version>${com.google.zxing_version}</version>
       </dependency>
       <dependency>
-          <groupId>commons-net</groupId>
-          <artifactId>commons-net</artifactId>
-          <version>${commons-net_commons-net_version}</version>
+        <groupId>commons-codec</groupId>
+        <artifactId>commons-codec</artifactId>
+        <version>${commons-codec_commons-codec_version}</version>
       </dependency>
       <dependency>
-          <groupId>junit</groupId>
-          <artifactId>junit</artifactId>
-          <version>${junit_junit_version}</version>
-          <scope>test</scope>
+        <groupId>commons-io</groupId>
+        <artifactId>commons-io</artifactId>
+        <version>${commons-io_commons-io_version}</version>
       </dependency>
       <dependency>
-          <groupId>log4j</groupId>
-          <artifactId>log4j</artifactId>
-          <version>${log4j_log4j_version}</version>
+        <groupId>commons-net</groupId>
+        <artifactId>commons-net</artifactId>
+        <version>${commons-net_commons-net_version}</version>
       </dependency>
-			<dependency>
-				<groupId>org.apache.ant</groupId>
-				<artifactId>ant</artifactId>
-				<version>${org.apache.ant_ant_version}</version>
-			</dependency>
       <dependency>
-				<groupId>org.slf4j</groupId>
-				<artifactId>slf4j-api</artifactId>
-				<version>${org.slf4j_version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.slf4j</groupId>
-				<artifactId>slf4j-log4j12</artifactId>
-				<version>${org.slf4j_version}</version>
-			</dependency>
-		</dependencies>
-	</dependencyManagement>
-	<build>
-		<pluginManagement>
-			<plugins>
+        <groupId>javax.persistence</groupId>
+        <artifactId>persistence-api</artifactId>
+        <version>${javax.persistence_persistence-api_version}</version>
+      </dependency>
+      <dependency>
+        <groupId>javax.servlet</groupId>
+        <artifactId>javax.servlet-api</artifactId>
+        <version>${javax.servlet_javax.servlet-api_version}</version>
+        <scope>provided</scope>
+      </dependency>
+      <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>${junit_junit_version}</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.mockito</groupId>
+        <artifactId>mockito-core</artifactId>
+        <version>${org.mockito_mockito-core_version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.projectlombok</groupId>
+        <artifactId>lombok</artifactId>
+        <version>${org.projectlombok_lombok_version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-api</artifactId>
+        <version>${org.slf4j_version}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+  <!-- mvn clean install -->
+  <build>
+    <pluginManagement>
+      <plugins>
+        <!--compile-->
         <plugin>
-            <groupId>org.jacoco</groupId>
-            <artifactId>jacoco-maven-plugin</artifactId>
-            <version>${org.jacoco_jacoco-maven-plugin_version}</version>
-            <executions>
-                <execution>
-                    <goals>
-                        <goal>prepare-agent</goal>
-                    </goals>
-                </execution>
-                <execution>
-                    <id>report</id>
-                    <phase>test</phase>
-                    <goals>
-                        <goal>report</goal>
-                    </goals>
-                </execution>
-            </executions>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>${maven-compiler-plugin.version}</version>
+          <configuration>
+            <source>${maven.compile.source}</source>
+            <target>${maven.compile.target}</target>
+          </configuration>
         </plugin>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-compiler-plugin</artifactId>
-					<version>${maven-compiler-plugin.version}</version>
-					<configuration>
-						<source>${maven.compile.source}</source>
-						<target>${maven.compile.target}</target>
-					</configuration>
-				</plugin>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-release-plugin</artifactId>
-					<version>${maven-release-plugin.version}</version>
-					<configuration>
-						<checkModificationExcludes>
-							<checkModificationExclude>pom.xml</checkModificationExclude>
-						</checkModificationExcludes>
-					</configuration>
-				</plugin>
-			</plugins>
-		</pluginManagement>
-	</build>
-	<profiles>
-		<profile>
-			<id>release</id>
-			<build>
-				<plugins>
-					<!-- GPG -->
-					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-gpg-plugin</artifactId>
-						<version>${maven-gpg-plugin.version}</version>
-						<executions>
-							<execution>
-								<phase>verify</phase>
-								<goals>
-									<goal>sign</goal>
-								</goals>
-							</execution>
-						</executions>
-					</plugin>
-					<!-- Javadoc -->
-					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-javadoc-plugin</artifactId>
-						<version>${maven-javadoc-plugin.version}</version>
-						<executions>
-							<execution>
-								<phase>package</phase>
-								<goals>
-									<goal>jar</goal>
-								</goals>
-							</execution>
-						</executions>
-					</plugin>
-					<!-- Source -->
-					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-source-plugin</artifactId>
-						<version>${maven-source-plugin.version}</version>
-						<executions>
-							<execution>
-								<phase>package</phase>
-								<goals>
-									<goal>jar-no-fork</goal>
-								</goals>
-							</execution>
-						</executions>
-					</plugin>
-				</plugins>
-			</build>
-		</profile>
-	</profiles>
+        <!--test-->
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>${maven-surefire-plugin.version}</version>
+          <configuration>
+            <!-- 使用 maven-surefire-plugin来执行单元测试。 将surefireArgLine赋值给argLine参数，以保证在测试执行时Jacoco agent处于运行状态。 -->
+            <argLine>${surefireArgLine}</argLine>
+            <useManifestOnlyJar>false</useManifestOnlyJar>
+            <useSystemClassLoader>true</useSystemClassLoader>
+          </configuration>
+        </plugin>
+        <!--test:coverage-->
+        <plugin>
+          <groupId>org.jacoco</groupId>
+          <artifactId>jacoco-maven-plugin</artifactId>
+          <version>${org.jacoco_jacoco-maven-plugin_version}</version>
+          <executions>
+            <execution>
+              <!-- 在maven的initialize阶段，将Jacoco的runtime agent作为VM的一个参数 传给被测程序，用于监控JVM中的调用。 -->
+              <id>default-prepare-agent</id>
+              <goals>
+                <goal>prepare-agent</goal>
+              </goals>
+              <configuration>
+                <destFile>${project.build.directory}/coverage-reports/jacoco.exec</destFile>
+                <propertyName>surefireArgLine</propertyName>
+              </configuration>
+            </execution>
+            <execution>
+              <!-- 在程序的verify阶段，执行report测试的程序。 文件的输入为perpare-agent阶段中设置或者默认的jacoco.exec. 参数 includes和excludes可用来选定report中过滤的类。 -->
+              <id>default-report</id>
+              <phase>test</phase>
+              <goals>
+                <goal>report</goal>
+              </goals>
+              <configuration>
+                <dataFile>${project.build.directory}/coverage-reports/jacoco.exec</dataFile>
+                <outputDirectory>${project.reporting.outputDirectory}/jacoco</outputDirectory>
+              </configuration>
+            </execution>
+          </executions>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+  <!-- mvn clean deploy -P release -Dgpg.passphrase=分享为shaneking在上海 -->
+  <profiles>
+    <profile>
+      <id>release</id>
+      <build>
+        <plugins>
+          <!-- GPG:-Dgpg.passphrase=分享为shaneking在上海 -->
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-gpg-plugin</artifactId>
+            <version>${maven-gpg-plugin.version}</version>
+            <executions>
+              <execution>
+                <phase>verify</phase>
+                <goals>
+                  <goal>sign</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+          <!-- Javadoc -->
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-javadoc-plugin</artifactId>
+            <version>${maven-javadoc-plugin.version}</version>
+            <executions>
+              <execution>
+                <phase>package</phase>
+                <goals>
+                  <goal>jar</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+          <!-- Source -->
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-source-plugin</artifactId>
+            <version>${maven-source-plugin.version}</version>
+            <executions>
+              <execution>
+                <phase>package</phase>
+                <goals>
+                  <goal>jar</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
+
 </project>
