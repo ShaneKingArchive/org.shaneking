@@ -117,6 +117,7 @@
     <module>../org.shaneking.jackson</module>
     <module>../org.shaneking.sql</module>
     <module>../org.shaneking.skavax</module>
+    <module>../org.shaneking.demo</module>
   </modules>
 
   <dependencyManagement>
