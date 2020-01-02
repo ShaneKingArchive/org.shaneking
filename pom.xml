@@ -10,7 +10,7 @@
   <name>Maven Top Project for ShaneKing</name>
   <description>Maven Top Project For ShaneKing</description>
   <url>https://github.com/ShaneKing/org.shaneking</url>
-  <inceptionYear>2011-2019</inceptionYear>
+  <inceptionYear>2011-2020</inceptionYear>
 
   <organization>
     <name>Azolla</name>
@@ -118,6 +118,7 @@
     <module>../org.shaneking.sql</module>
     <module>../org.shaneking.skavax</module>
     <module>../org.shaneking.demo.ins.rel.cls</module>
+    <module>../org.shaneking.demo.nfs.file.lock</module>
   </modules>
 
   <dependencyManagement>
