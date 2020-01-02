@@ -117,7 +117,7 @@
     <module>../org.shaneking.jackson</module>
     <module>../org.shaneking.sql</module>
     <module>../org.shaneking.skavax</module>
-    <module>../org.shaneking.demo</module>
+    <module>../org.shaneking.demo.ins.rel.cls</module>
   </modules>
 
   <dependencyManagement>
