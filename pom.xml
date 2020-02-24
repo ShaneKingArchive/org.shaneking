@@ -4,7 +4,7 @@
 
   <groupId>org.shaneking</groupId>
   <artifactId>org.shaneking</artifactId>
-  <version>0.11.4</version>
+  <version>0.11.5</version>
   <packaging>pom</packaging>
 
   <name>Maven Top Project for ShaneKing</name>
@@ -85,6 +85,8 @@
     <!-- dependencies -->
     <com.belerweb_pinyin4j_version>2.5.1</com.belerweb_pinyin4j_version>
     <com.fasterxml.jackson.core_version>2.10.0</com.fasterxml.jackson.core_version>
+    <com.github.jsqlparser_jsqlparser_version>3.1</com.github.jsqlparser_jsqlparser_version>
+    <com.google.guava_guava_version>28.1-jre</com.google.guava_guava_version>
     <com.google.guava_guava_version>28.1-jre</com.google.guava_guava_version>
     <com.google.zxing_version>3.4.0</com.google.zxing_version>
     <commons-codec_commons-codec_version>1.13</commons-codec_commons-codec_version>
@@ -108,13 +110,14 @@
     <maven-source-plugin.version>3.1.0</maven-source-plugin.version>
   </properties>
 
-  <!-- mvn -N versions:set -DnewVersion=0.11.4 -->
+  <!-- mvn -N versions:set -DnewVersion=0.11.5 -->
   <!-- mvn versions:commit -->
   <!-- Unused : mvn -N versions:update-child-modules -->
   <modules>
     <module>../org.shaneking.skava</module>
     <module>../org.shaneking.codec</module>
     <module>../org.shaneking.jackson</module>
+    <module>../org.shaneking.jsqlparser</module>
     <module>../org.shaneking.sql</module>
     <module>../org.shaneking.skavax</module>
     <module>../org.shaneking.demo.ins.rel.cls</module>
@@ -142,6 +145,11 @@
         <groupId>com.fasterxml.jackson.core</groupId>
         <artifactId>jackson-databind</artifactId>
         <version>${com.fasterxml.jackson.core_version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.github.jsqlparser</groupId>
+        <artifactId>jsqlparser</artifactId>
+        <version>${com.github.jsqlparser_jsqlparser_version}</version>
       </dependency>
       <dependency>
         <groupId>com.google.guava</groupId>
