@@ -4,7 +4,7 @@
 
   <groupId>org.shaneking</groupId>
   <artifactId>org.shaneking</artifactId>
-  <version>0.11.6</version>
+  <version>0.11.7</version>
   <packaging>pom</packaging>
 
   <name>Maven Top Project for ShaneKing</name>
@@ -110,7 +110,7 @@
     <maven-source-plugin.version>3.1.0</maven-source-plugin.version>
   </properties>
 
-  <!-- mvn -N versions:set -DnewVersion=0.11.6 -->
+  <!-- mvn -N versions:set -DnewVersion=0.11.7 -->
   <!-- mvn versions:commit -->
   <!-- Unused : mvn -N versions:update-child-modules -->
   <modules>
