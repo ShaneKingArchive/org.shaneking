@@ -4,7 +4,7 @@
 
   <groupId>org.shaneking</groupId>
   <artifactId>org.shaneking</artifactId>
-  <version>0.12.2</version>
+  <version>0.12.3</version>
   <packaging>pom</packaging>
 
   <name>Maven Top Project for ShaneKing</name>
@@ -87,7 +87,6 @@
     <com.fasterxml.jackson.core_version>2.10.0</com.fasterxml.jackson.core_version>
     <com.github.jsqlparser_jsqlparser_version>3.1</com.github.jsqlparser_jsqlparser_version>
     <com.google.guava_guava_version>28.1-jre</com.google.guava_guava_version>
-    <com.google.guava_guava_version>28.1-jre</com.google.guava_guava_version>
     <com.google.zxing_version>3.4.0</com.google.zxing_version>
     <commons-codec_commons-codec_version>1.13</commons-codec_commons-codec_version>
     <commons-io_commons-io_version>2.6</commons-io_commons-io_version>
@@ -110,7 +109,7 @@
     <maven-source-plugin.version>3.1.0</maven-source-plugin.version>
   </properties>
 
-  <!-- mvn -N versions:set -DnewVersion=0.12.2 -->
+  <!-- mvn -N versions:set -DnewVersion=0.12.3 -->
   <!-- mvn versions:commit -->
   <!-- Unused : mvn -N versions:update-child-modules -->
   <modules>
