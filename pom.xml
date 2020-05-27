@@ -163,6 +163,7 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-compiler-plugin</artifactId>
           <configuration>
+            <parameters>true</parameters>
             <source>${maven.compiler.source}</source>
             <target>${maven.compiler.target}</target>
           </configuration>
@@ -171,7 +172,6 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-surefire-plugin</artifactId>
-          <version>${maven-surefire-plugin.version}</version>
           <configuration>
             <!-- 使用 maven-surefire-plugin来执行单元测试。 将surefireArgLine赋值给argLine参数，以保证在测试执行时Jacoco agent处于运行状态。 -->
             <argLine>${surefireArgLine}</argLine>
