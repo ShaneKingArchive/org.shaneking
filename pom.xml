@@ -10,7 +10,7 @@
 
   <groupId>org.shaneking</groupId>
   <artifactId>org.shaneking</artifactId>
-  <version>0.13.1</version>
+  <version>0.13.2</version>
   <packaging>pom</packaging>
 
   <name>Maven Top Project for ShaneKing</name>
@@ -100,7 +100,7 @@
     <maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
   </properties>
 
-  <!-- mvn -N versions:set -DnewVersion=0.13.1 -->
+  <!-- mvn -N versions:set -DnewVersion=0.13.2 -->
   <!-- mvn versions:commit -->
   <!-- Unused : mvn -N versions:update-child-modules -->
   <modules>
