@@ -10,7 +10,7 @@
 
   <groupId>org.shaneking</groupId>
   <artifactId>org.shaneking</artifactId>
-  <version>0.13.8</version>
+  <version>0.13.10</version>
   <packaging>pom</packaging>
 
   <name>Maven Top Project for ShaneKing</name>
@@ -99,7 +99,7 @@
     <maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
   </properties>
 
-  <!-- mvn -N versions:set -DgenerateBackupPoms=false -DnewVersion=0.13.8 -->
+  <!-- mvn -N versions:set -DgenerateBackupPoms=false -DnewVersion=0.13.10 -->
   <!-- Unused : mvn -N versions:update-child-modules -->
   <modules>
     <module>../org.shaneking.skava</module>
