@@ -102,13 +102,14 @@
   <!-- mvn -N versions:set -DgenerateBackupPoms=false -DnewVersion=0.15.1 -->
   <!-- Unused : mvn -N versions:update-child-modules -->
   <modules>
-    <module>../org.shaneking.skava</module>
-    <module>../org.shaneking.test</module>
     <module>../org.shaneking.codec</module>
     <module>../org.shaneking.jackson</module>
     <module>../org.shaneking.jsqlparser</module>
-    <module>../org.shaneking.sql</module>
+    <module>../org.shaneking.skava</module>
     <module>../org.shaneking.skavax</module>
+    <module>../org.shaneking.spring</module>
+    <module>../org.shaneking.sql</module>
+    <module>../org.shaneking.test</module>
   </modules>
 
   <dependencyManagement>
